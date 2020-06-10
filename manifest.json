@@ -1,0 +1,16 @@
+{
+  "name": "SpreadSheetDoubleQuotationMarkRemover",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "",
+  "content_scripts": [{
+    "matches": ["https://docs.google.com/spreadsheets/*"],
+    "js": [
+      "main.js"
+    ]
+  }],
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite"
+  ]
+}
